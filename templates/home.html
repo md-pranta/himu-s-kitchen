@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<div class="container-xxl py-5 mb-5">
+  <div class="container my-5 py-5">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 text-center text-lg-start">
+        <h1 class="display-3 text-warning animated slideInLeft">
+          Enjoy Our<br />Delicious Meal
+        </h1>
+        <p class="text-success animated slideInLeft mb-4 pb-2">
+          Indulge in a symphony of flavors at our restaurant, where culinary
+          artistry meets comfort. Experience a blend of exquisite dishes,
+          curated with the freshest ingredients, served in an inviting ambiance
+          that celebrates the joy of dining.
+        </p>
+      </div>
+      <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+        <img class="img-fluid" src="{% static 'hero.png'%}" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
+<div class="row padding-top:10px">
+  <div class="col-6">dfgfg</div>
+  <div class="col-6">
+    <img
+      class="height: 50px width: 100%"
+      src="{% static 'hero.png'%}"
+      alt="homePic"
+    />
+  </div>
+</div>

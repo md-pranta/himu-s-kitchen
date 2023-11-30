@@ -1,0 +1,23 @@
+{% extends "base.html" %}{% load static %}{% block content %}
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  {% for val in categories %}
+  <div class="col">
+    <div class="card h-100">
+      <img
+        src="{{ val.strCategoryThumb }}"
+        class="card-img-top rounded"
+        alt="cardPic"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ val.idCategory }}</h5>
+        <h5 class="card-title">{{ val.strCategory }}</h5>
+        <p class="card-text">
+          {{ val.strCategoryDescription | truncatewords:10 }}
+        </p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock content %}

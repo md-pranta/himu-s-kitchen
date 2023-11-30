@@ -1,0 +1,52 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>we try to serve our customer delicious food</p>
+</div>
+
+
+<h1 style="text-align: center" class="text-warning">Our Master Chefs</h1>
+<p style="text-align: center">Within our Himu's kitchen, three master chefs orchestrate an unparalleled gastronomic experience</p>
+<div class="row">
+  <div class="col-4">
+    <div class="card">
+      <div class="rounded-circle orverflow-hidden m-4">
+        <img src="{% static 'team-1.jpg'%}" alt="Jane" class="img-fluid" />
+
+          <h2>Jane Doe</h2>
+          <p class="title">Innovator Extraordinaire</p>
+          <p>{{ 'Renowned for crafting avant-garde dishes, pushing the boundaries of traditional flavors and techniques to create cutting-edge culinary experiences.' | truncatewords:10 }}</p>
+          <p>jane@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="card">
+        <div class="rounded-circle orverflow-hidden m-4">
+          <img src="{% static 'team-2.jpg'%}" alt="Jane" class="img-fluid" />
+          <h2>Mike Ross</h2>
+          <p class="title">Traditional Flavors Virtuoso</p>
+          <p>{{'A master of heritage recipes and classic cuisines, adept at infusing authenticity and nostalgia into every dish while maintaining a contemporary edge.' | truncatewords:10 }}</p>
+          <p>mike@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="card">
+        <div class="rounded-circle orverflow-hidden m-4">
+          <img src="{% static 'team-3.jpg'%}" alt="Jane" class="img-fluid" />
+          <h2>John Doe</h2>
+          <p class="title">Artisanal Creations Connoisseur</p>
+          <p>{{'Specializing in meticulously curated and visually stunning culinary creations, emphasizing the harmony of taste and presentation, transforming each plate into a work of art.' | truncatewords:10}}</p>
+          <p>john@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock content %}
+</div>
